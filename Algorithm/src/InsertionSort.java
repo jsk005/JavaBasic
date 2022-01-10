@@ -39,7 +39,7 @@ public class InsertionSort {
                 if(a[prev] > temp){ // 이전 원소의 배열값이 key(temp)값보다 더 크면
                     a[prev + 1] = a[prev]; // 자리 바꿈
                     System.out.printf(
-                            "i=%d, j=%d, temp=%d(key), a[%d]=%d",
+                            "i=%d, prev=%d, temp=%d(key), a[%d]=%d",
                             i,prev,temp,prev+1,a[prev+1]
                     );
                 } else {
@@ -48,7 +48,7 @@ public class InsertionSort {
                 System.out.print("\n");
             }
             a[prev + 1] = temp;
-            System.out.printf("i=%d, j=%d, a[%d]=%d\n",i, prev, prev+1, temp);
+            System.out.printf("i=%d, prev=%d, a[%d]=%d\n",i, prev, prev+1, temp);
             printArray(a);
         }
         return a;
